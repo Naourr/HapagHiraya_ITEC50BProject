@@ -1,0 +1,58 @@
+@media screen and (max-width: 800px) {
+    nav .title {
+        font-size: 3rem;
+    }
+
+    .hero .banner {
+        justify-content: center;
+        padding: 2rem;
+        
+        
+    }
+    .hero .textbox {
+        aspect-ratio: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav .upper {
+        padding: 1rem 0;
+    }
+    nav .title {
+        font-size: 2.2rem;
+    }
+    nav .mobile-menu {
+        display: block;
+    }
+    nav .home-btn {
+        display: none;
+    }
+    nav .about-btn {
+        display: none;
+    }
+    nav .lower {
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        font-size: .65rem;
+    }
+    nav .lower a {
+        padding: 8px 12px;
+    }
+    .mobile-dropdown {
+        display: flex;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav .title {
+        font-size: 1.8rem;
+    }
+    nav .mobile-menu {
+        top: .6rem;
+    }
+
+    .hero .textbox p {
+        display: none;
+    }
+    .hero .textbox h1 {
+        font-size: 2rem;
+    }
+}
