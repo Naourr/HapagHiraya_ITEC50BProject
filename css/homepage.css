@@ -46,3 +46,25 @@
     gap: 1rem;
     justify-content: center;
 }
+
+.hero .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.hero .grid .card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.hero .grid .card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.hero .grid .card p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
