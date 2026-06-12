@@ -4,7 +4,8 @@
     gap: 1.5rem;
 }
 .hero a,
-.categories-section a {
+.categories-section a,
+.favorites-section a {
     text-decoration: none;
     color: var(--accent1);
 }
@@ -66,7 +67,6 @@
 .grid .card img {
     width: 100%;
     margin-bottom: 10px;
-    aspect-ratio: 6/8;
 }
 .grid .card p {
     font-size: 1.6rem;
@@ -135,6 +135,60 @@ div:has(.about-section) {
 .categories-section .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.categories-section .card {
-    justify-content: start;
+
+.favorites-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.favorites-section img {
+    width: 100%;
+}
+
+.favorites-section .left,
+.favorites-section .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.favorites-section h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.favorites-section span {
+    font-size: 2.6rem;
+    color: var(--accent1lighter);
+    font-weight: 600;
+    padding: 0 2rem;
+}
+.favorites-section .faves {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.favorites-section .fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faves a {
+    color: var(--textcolor);
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.favorites-section .line-button .button {
+    background-color: var(--accent1);
+    color: var(--bgcolor);
+}
+.favorites-section .line-button .button:hover {
+    background-color: var(--textcolor1);
 }
