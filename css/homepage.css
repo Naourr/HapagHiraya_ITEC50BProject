@@ -155,6 +155,7 @@ div:has(.about-section) {
 .contact-cta .outline-btn:hover {
     background-color: var(--textcolor1);
     color: var(--bgcolor);
+}
 
 .categories-section {
     display: flex;
