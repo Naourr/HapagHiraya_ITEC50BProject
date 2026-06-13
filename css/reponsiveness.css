@@ -46,6 +46,10 @@ nav .button {
     .favorites-section {
         grid-template-columns: 1fr;
     }
+
+    .category-header img {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -79,7 +83,8 @@ nav .button {
         display: flex;
     }
 
-    .hero .grid {
+    .hero .grid,
+    .categories .grid {
         grid-template-columns: 1fr 1fr;
     }
 

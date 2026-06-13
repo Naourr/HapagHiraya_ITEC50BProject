@@ -1,0 +1,41 @@
+.category-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+.category-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.category-header p {
+    font-size: 1.1rem;
+}
+.category-header img {
+    width: 300px;
+    height: auto;
+}
+
+
+.categories .upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+.categories .upper h1 {
+    margin-right: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 550;
+    font-style: italic;
+}
+.categories .grid {
+    padding: 2rem 0;
+}
+.categories .line {
+    width: 100%;
+    display: inline-block;
+}

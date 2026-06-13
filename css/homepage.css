@@ -146,9 +146,9 @@ div:has(.about-section) {
 }
 
 .contact-cta .outline-btn {
-    background-color: transparent;
-    color: var(--textcolor1);
-    border: 1px solid var(--textcolor1);
+    background-color: var(--accent1);
+    color: var(--textcolor2);
+    border: 1px solid var(--textcolor2);
     margin-top: 10px;
 }
 
