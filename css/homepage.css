@@ -3,7 +3,9 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-.hero a {
+.hero a,
+.categories-section a,
+.favorites-section a {
     text-decoration: none;
     color: var(--accent1);
 }
@@ -25,7 +27,6 @@
     width: 100%;
     height: 450px;
     padding: 4rem;
-
     display: flex;
     justify-content: right;
     align-items: center;
@@ -50,12 +51,12 @@
     color: var(--textcolor);
 }
 
-.hero .grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
 }
-.hero .grid .card {
+.grid .card {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -63,18 +64,17 @@
     text-align: center;
     gap: 10px;
 }
-.hero .grid .card img {
+.grid .card img {
     width: 100%;
     margin-bottom: 10px;
-    aspect-ratio: 6/8;
 }
-.hero .grid .card p {
+.grid .card p {
     font-size: 1.6rem;
     font-weight: 600;
 }
 
 .hero .textbox h1:hover,
-.hero .card p:hover {
+.card p:hover {
     color: var(--accent1);
 }
 
@@ -84,7 +84,6 @@ div:has(.about-section) {
     padding-top: 2.5rem;
 
 }
-
 .about-container {
     display: flex;
     justify-content: center;
@@ -95,14 +94,12 @@ div:has(.about-section) {
     margin: 0 auto;
     padding: 1.5rem;
 }
-
 .about-container img {
     aspect-ratio: 1/1;
     height: 500px;
     width: auto;
     margin-right: 4rem;
 }
-
 .about-container .textbox {
     background-color: var(--bgcolor);
     padding: 3rem;
@@ -158,4 +155,77 @@ div:has(.about-section) {
 .contact-cta .outline-btn:hover {
     background-color: var(--textcolor1);
     color: var(--bgcolor);
+
+.categories-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding-top: 3.5rem;
+}
+.categories-section h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.categories-section .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.favorites-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.favorites-section img {
+    width: 100%;
+}
+
+.favorites-section .left,
+.favorites-section .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.favorites-section h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.favorites-section span {
+    font-size: 2.6rem;
+    color: var(--accent1lighter);
+    font-weight: 600;
+    padding: 0 2rem;
+}
+.favorites-section .faves {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.favorites-section .fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faves a {
+    color: var(--textcolor);
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.favorites-section .line-button .button {
+    background-color: var(--accent1);
+    color: var(--bgcolor);
+}
+.favorites-section .line-button .button:hover {
+    background-color: var(--textcolor1);
 }

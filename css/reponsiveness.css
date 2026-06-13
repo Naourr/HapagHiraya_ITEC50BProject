@@ -35,6 +35,17 @@ nav .button {
     .hero .textbox {
         aspect-ratio: auto;
     }
+
+    .categories-section .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .categories-section .grid .card:first-child {
+        grid-column: span 2;
+    }
+
+    .favorites-section {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 600px) {
