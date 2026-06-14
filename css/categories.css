@@ -14,8 +14,11 @@
     font-size: 1.1rem;
 }
 .category-header img {
-    width: 300px;
-    height: auto;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
 }
 
 .categories .upper {
